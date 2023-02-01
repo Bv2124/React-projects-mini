@@ -1,22 +1,40 @@
 import React,{useState} from "react";
 
 export default function Clr(){
-    const[color,setColor]=useState({color:'green'})
+    const[color,setColor]=useState({
+        color:'white',
+        backgroundColor:'grey',
+        fontSize:"2em"
+    })
     const changecolor = () =>{
-        setColor({color:'red'})
+        setColor({
+            color:'red',
+            backgroundColor:'black',
+            fontSize:"3em"
+        }
+            )
     }
     const changecolo = () =>{
-        setColor({color:'black'})
+        setColor({
+            color:'blue',
+            backgroundColor:'lightblue',
+            fontSize:"4em"}
+            )
     }
-    const changecol = () =>{
-        setColor({color:'grey'})
+    const changecol= () =>{
+        setColor({
+            color:'pink',
+            backgroundColor:'green',
+            fontSize:"5em"}
+            )
     }
+   
     return(
     <div>
-    <h1 style={color}>Hello</h1>
+    <h1 style={color}>Hello buddy !</h1>
     <button onClick={changecolor}>red</button>
-    <button onClick={changecolo}>black</button>
-    <button onClick={changecol}></button>
+    <button onClick={changecolo}>blue</button>
+    <button onClick={changecol}>Pink</button>
     </div>
     )
 }
