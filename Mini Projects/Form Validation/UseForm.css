@@ -1,0 +1,67 @@
+*{
+    text-align: center;
+    margin: 0 auto;
+}
+.Form{
+    display:flex;
+    
+}
+.Form_container{
+    background-color:#31548e;
+    width: 70%;
+    min-height:24em;
+}
+label{
+    display: inline!important;
+    padding: 0.3em;
+}
+.Gender{
+    display: flex!important;
+    width: 33%;
+}
+.field{
+    padding: 0.5em;
+    font-weight: 500;
+}
+p{
+    margin: 0 0 0 0 !important;
+}
+.btn-outline-primary{
+    padding: 1px 3px !important;
+    position: relative;
+    bottom: 0.1em;
+}
+@media (max-width:700px) {
+    input {
+        display: grid;
+        width: 100%!important;
+        align-items: center;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+    }    
+}
+.Welcome{
+  display: inline-block;
+    font-size: 1.4em;
+    border: solid rgb(192, 195, 194) 0.2em;
+    padding: 0.3em;
+    text-shadow: whitesmoke 1px 1px;
+    font-weight: 800;
+    animation: tracking-in-expand 0.7s ease-in-out both;
+    border-radius: 0.1em;
+    outline: solid 1px;
+}
+ @keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
