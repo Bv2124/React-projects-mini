@@ -1,0 +1,110 @@
+.container {
+    width: 90%;
+    margin: 30px auto;
+  }
+  
+  /* Style the side menu */
+  /* By default, the menu is invisible because its left position is set to -100% */
+  .side-nav {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    padding: 60px 50px 30px 30px;
+    background-color: #333;
+    transition: 0.5s;
+  }
+  
+  /* This makes the side menu visible */
+  .side-nav--active {
+    right: 0;
+  }
+  
+  /* Style the side menu's links */
+  .side-nav a {
+    margin: 8px 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .side-nav a:hover {
+    color: orange;
+  }
+  
+  /* A horizontal line to separate sections of the menu */
+  .divider {
+    margin: 15px 0;
+    height: 1px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  /* Stye the close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    outline:none;
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .close-button:hover {
+    color: orange;
+  }
+  
+  /* Style the open menu */
+  .open-button {
+    padding: 8px 18px;
+    background: blue;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+  }
+  
+  .open-button:hover {
+    background:lightslategray;
+  }
+ .App{
+  background-color: blue;
+ }
+ .App-header{
+  display: flex;
+  margin: 0;
+ }
+ .App ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding-right: 1em;
+  padding-left: 1em;
+ }
+ .App ul li:hover{
+  border-bottom: solid red;
+  border-radius: 0.5em;
+ }
+ .App ul li {
+  list-style: none;
+  text-align: center;
+ }
+  @media (max-width:700px) {
+    .open-button{
+      display: block;
+    }
+    .App{
+      display: none;
+    }
+  }
